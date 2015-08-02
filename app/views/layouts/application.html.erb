@@ -31,7 +31,14 @@ input.btn{
       </div>
     </div>
   </nav>
+
   <div class="container">
+    <% if notice %>
+      <div class="alert alert-info">
+        <%= notice %>
+      </div>
+    <% end %>
+    
     <%= yield %>
   </div>
 </body>
